@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zemoso Restaurant</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+ 
+<body>
+  
+<div id="left">
+   <div class="tHeader"> 
+    <h3>Tables</h3> 
+      <input type="text/numeric" id="tInput" onkeyup="tableSearch()" placeholder="Search for Tables" title="Type in a name">        
+   </div>   
+  
+  <div style="padding-top: 110px;">
+  <table id="myTable"></table>
+  </div>  
+</div>
+
+  
+<div class="center">&nbsp;</div>
+
+
+<div id="right">
+  <div class="iHeader">
+    <h3>Menu</h3>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search menu... by course, by name" title="Type in a name">
+   </div>
+   
+   <div style="padding-top: 110px;">
+   <table id="myMenu"></table>
+   </div>
+</div>
+
+  
+  
+<div id="myModal" class="modal">
+  <div class="modal-content">
+  
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h3 style="display: inline">Table-</h3>
+       <h3 id="tableNum" style="display: inline"> </h3>
+       <h3 style="display: inline"> | Order Details</h3>
+    </div>
+    
+    <div class="modal-body"> 
+      <table id="modalTable">
+        <thead>
+        <tr>
+        <th>S.No</th>
+        <th>Items</th>
+        <th>Price</th>
+        <th>No of Servings</th>       
+        </tr>
+        </thead>
+        <tbody id="modalTableBody"></tbody>   
+      </table>
+    </div>
+    
+    <div class="modal-footer">
+      <div id="modalTotal">
+        <h3 style="display: inline">Total Amount: </h3>
+        <h3 style="display: inline" id="totalAmt"> </h3>
+      </div>
+      <div class="closeSessionDiv">
+        <button id="closeSession" onclick="genBill()">Close Session(Generate Bill)</button>   
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  <!-- Bill Modal -->
+<div id="billModal" class="modalBill">
+  <div class="billmodal-content">
+         
+    <div class="billmodal-header">
+        <h3 style="display: inline">Table-</h3>
+        <h3 id="tablenum" style="display: inline"> </h3>
+        <h3 style="display: inline"> | Bill</h3>
+      </div>
+      <br>
+      <div class="modal-body">
+      <h4 style="display: inline">PLEASE PAY TOTAL AMOUNT: </h4>
+        <h4 style="display: inline" id="billAmt"> </h4> 
+      </div>
+   
+    <div class="closeSessionDiv">
+        <button id="payBill" onclick="pay()">Pay</button>
+        <br>    
+      </div> 
+      <br>
+  </div>
+</div>
+
+<script type="text/javascript" src="script.js"> 
+</script>
+</body>
+</html> 
