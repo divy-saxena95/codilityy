@@ -25,11 +25,14 @@ public class ScoreCount {
                     String p = T[i].substring(0, j + 1);
 
                     //checks if result is OK and if the prefix comes again to increment the value
-                    if (score.containsKey(p) && R[i].equals("OK")) {
-                        score.put(p, score.get(p) + 1);
-                    } else {
+                    if (R[i].equals("OK")) {
+                        if(score.containsKey(p))
+                            score.put(p,score.get(p)+1);
+                     else {
                         score.put(p, 1);
-                    }
+                    }}
+                    else
+                        score.put(p,-(score.size()+1));
                 }
             }
 
@@ -37,7 +40,7 @@ public class ScoreCount {
         int count = 0;
         Set<String> keys = score.keySet();
         for (String p : keys) {
-            if (score.get(p) > 1) {
+            if (score.get(p)>=1) {
                 count++;
             }
         }
