@@ -13,10 +13,11 @@
     <session id="913858624">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -31,12 +32,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2501" />
+          <entry key="java" value="3141" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2501" />
+          <entry key="JAVA" value="3141" />
         </counts>
       </usages-collector>
     </session>
@@ -46,23 +47,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/codility1/ScoreCount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="60" column="70" selection-start-line="60" selection-start-column="70" selection-end-line="60" selection-end-column="70" />
+            <state relative-caret-position="345">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/HashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="554" column="13" selection-start-line="554" selection-start-column="13" selection-end-line="554" selection-end-column="13" />
-              <folding>
-                <element signature="e#23628#23629#0" expanded="true" />
-                <element signature="e#23682#23683#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,6 +96,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,13 +120,12 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="tim&#9;PSI&#9;JAVA://java.sql.Time&#10;time&#9;PSI&#9;JAVA://java.sql.Time&#10;string&#9;FILE&#9;jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/String.java&#10;string buffer&#9;PSI&#9;JAVA://java.lang.StringBuffer" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535656444946" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536129661324" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/javaincremental1" />
   </component>
   <component name="RunDashboard">
@@ -226,11 +214,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="123" width="1295" height="600" extended-state="0" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49685535" visible="true" weight="0.25860688" />
-      <window_info id="Structure" order="1" sideWeight="0.5031447" side_tool="true" visible="true" weight="0.25860688" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49387756" visible="true" weight="0.29003984" />
+      <window_info id="Structure" order="1" sideWeight="0.50612247" side_tool="true" visible="true" weight="0.29003984" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -238,7 +226,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996016" visible="true" weight="0.32911393" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996016" visible="true" weight="0.24148607" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993808" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -305,8 +293,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/codility1/ScoreCount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="60" column="70" selection-start-line="60" selection-start-column="70" selection-end-line="60" selection-end-column="70" />
+        <state relative-caret-position="345">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

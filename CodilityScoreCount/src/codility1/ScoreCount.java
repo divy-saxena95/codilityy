@@ -14,33 +14,31 @@ public class ScoreCount {
 
         //create a hash map for storing the scores
         HashMap<String, Integer> score = new HashMap<>();
-
-        //couting the occurences of a positive result
-        for (int i = 0; i < T.length; i++)
-            for (int j = 0; j < T[i].length(); j++) {
-                char ch = T[i].charAt(j);
-
-                //Extracts the substring as soon as a digit is found
-                if (ch >= '0' && ch <= '9') {
-                    String p = T[i].substring(0, j + 1);
-
-                    //checks if result is OK and if the prefix comes again to increment the value
-                    if (R[i].equals("OK")) {
-                        if(score.containsKey(p))
-                            score.put(p,score.get(p)+1);
-                     else {
-                        score.put(p, 1);
-                    }}
-                    else
-                        score.put(p,-(score.size()+1));
+        int noofdigits, pos;
+        String prefix = "";
+        //counting the occurences of a positive result
+        for (int i = 0; i < T.length; i++) {
+            noofdigits = 0;
+            pos = 0;
+            String number = T[i].replaceAll("[^0-9]", "");
+            prefix = "test" + number;
+            //checks if result is OK and if the prefix comes again to increment the value
+            if (R[i].equals("OK")) {
+                if (score.containsKey(prefix))
+                    score.put(prefix, score.get(prefix) + 1);
+                else {
+                    score.put(prefix, 1);
                 }
-            }
+            } else
+                score.put(prefix, -(score.size() + 1));
+
+        }
 
         //counting the number of test cases passed
         int count = 0;
         Set<String> keys = score.keySet();
         for (String p : keys) {
-            if (score.get(p)>=1) {
+            if (score.get(p) >= 1) {
                 count++;
             }
         }
@@ -50,15 +48,16 @@ public class ScoreCount {
             throw new IllegalArgumentException("Argument 'divisor' is 0");
 
         //returns the final score
+
         return (int) (count * 100) / score.size();
     }
 
-    //main method
 
     public static void main(String[] args) {
         //sample example
         String T[] = {"test1a", "test2", "test1b", "test1c", "test3"};
         String R[] = {"Wrong answer", "OK", "Runtime Error", "OK", "Time Limit Exceeded"};
+
         ScoreCount sc = new ScoreCount();
         int score = sc.ScoreCount1(T, R);
         System.out.println(score);
